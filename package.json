@@ -1,24 +1,24 @@
 {
-  "name": "goit-js-hw-08-gallery",
+  "name": "goit-js-hw-09-gallery",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html",
+    "build": "parcel build src/index.html --public-url /goit-js-hw-09-gallery.git/",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TarIryna/goit-js-hw-08-gallery.git"
+    "url": "git+https://github.com/TarIryna/goit-js-hw-09-gallery.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/TarIryna/goit-js-hw-08-gallery/issues"
+    "url": "https://github.com/TarIryna/goit-js-hw-09-gallery/issues"
   },
-  "homepage": "https://github.com/TarIryna/goit-js-hw-08-gallery#readme",
+  "homepage": "https://tariryna.github.io/goit-js-hw-09-gallery/",
   "dependencies": {
     "express": "^4.17.1",
     "joi": "^17.4.0",
