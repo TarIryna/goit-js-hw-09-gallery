@@ -162,10 +162,9 @@ var lightboxImage = document.querySelector('.lightbox__image');
 var closeButton = document.querySelector('[data-action="close-lightbox"]');
 var overlay = document.querySelector('.lightbox__overlay');
 galleryList.insertAdjacentHTML('beforeend', galleryMarkup);
-galleryList.addEventListener('click', onImageListClick);
-overlay.addEventListener('click', closeLightbox);
-closeButton.addEventListener('click', closeLightbox);
-window.addEventListener('keydown', onEscape);
+galleryList.addEventListener('click', onImageListClick); // overlay.addEventListener('click', closeLightbox);
+// closeButton.addEventListener('click', closeLightbox);
+// window.addEventListener('keydown', onEscape);
 
 function createGalleryItems(galleryItems) {
   return galleryItems.map(function (_ref) {
@@ -188,6 +187,9 @@ function onImageListClick(e) {
   lightboxImage.src = currentImage;
   lightboxImage.alt = currentAlt;
   lightbox.classList.add('is-open');
+  overlay.addEventListener('click', closeLightbox);
+  closeButton.addEventListener('click', closeLightbox);
+  window.addEventListener('keydown', onEscape);
 }
 
 function closeLightbox(e) {
@@ -251,7 +253,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55202" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54100" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

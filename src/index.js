@@ -74,9 +74,9 @@ const overlay = document.querySelector('.lightbox__overlay');
 
 galleryList.insertAdjacentHTML('beforeend', galleryMarkup);
 galleryList.addEventListener('click', onImageListClick);
-overlay.addEventListener('click', closeLightbox);
-closeButton.addEventListener('click', closeLightbox);
-window.addEventListener('keydown', onEscape);
+// overlay.addEventListener('click', closeLightbox);
+// closeButton.addEventListener('click', closeLightbox);
+// window.addEventListener('keydown', onEscape);
 
 function createGalleryItems(galleryItems) {
   return galleryItems.map(({preview, original, description})=> {
@@ -109,6 +109,9 @@ function onImageListClick(e) {
   lightboxImage.src = currentImage;
   lightboxImage.alt = currentAlt;
   lightbox.classList.add('is-open');
+  overlay.addEventListener('click', closeLightbox);
+  closeButton.addEventListener('click', closeLightbox);
+  window.addEventListener('keydown', onEscape);
 }
 
 function closeLightbox(e) {
