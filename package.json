@@ -1,35 +1,28 @@
 {
-  "name": "goit-js-hw-09-gallery",
-  "version": "1.0.0",
+  "name": "parcel-project-template",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://tariryna.github.io/goit-js-hw-09-gallery",
   "scripts": {
-    "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html --public-url /goit-js-hw-09-gallery.git/",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "dev": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /goit-js-hw-09-gallery/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TarIryna/goit-js-hw-09-gallery.git"
+    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
   },
-  "author": "",
+  "keywords": [],
+  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/TarIryna/goit-js-hw-09-gallery/issues"
-  },
-  "homepage": "https://tariryna.github.io/goit-js-hw-09-gallery/",
-  "dependencies": {
-    "express": "^4.17.1",
-    "joi": "^17.4.0",
-    "shortid": "^2.2.16",
-    "uuid": "^8.3.2"
+    "url": "https://github.com/goitacademy/parcel-project-template/issues"
   },
   "devDependencies": {
-    "cssnano": "^5.0.6",
     "parcel-bundler": "^1.12.5",
-    "postcss": "^8.3.5",
-    "webpack": "^5.40.0",
-    "webpack-cli": "^4.7.2"
+    "parcel-plugin-handlebars-precompile": "^1.0.2",
+    "parcel-plugin-nuke-dist": "^1.0.1",
+    "posthtml-include": "^1.6.2",
+    "sass": "^1.32.8"
   }
 }
